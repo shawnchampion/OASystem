@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+//-->
+</script>
+</head>
+<script language="JavaScript">	
+	function MenuClick( MenuID )
+	{
+		var i = 0;
+		var idMenu = null;
+		for (i = 1; i <= 9; i++)
+		{
+			idMenu = "Menu" + i;
+			if (idMenu == MenuID)
+			{
+				eval(idMenu).style.display = "";
+			}
+			else
+			{
+				eval(idMenu).style.display = "none";
+			}
+		}
+	}
+</script>
+<body>
+<table width="180" height="100%" border="0" cellpadding="0" cellspacing="0"  background="image/run.jpg">
+  <tr style="cursor: hand" onClick="MenuClick('Menu1')"> 
+    <td width="100%" height="20" background="image/menu3.gif" bgcolor="#CCCCCC">个人信息</td>
+  </tr>
+  <tr id="Menu1"> 
+    <td valign="top"><table width="98" border="0" cellspacing="2" cellpadding="0">
+        <tr> 
+          <td bgcolor="#D3E3F5"><a href="PersonalInfo_Self" target="mainFrame">本人信息</a></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#D3E3F5"><a href="PersonalInfo_Others" target="mainFrame">他人信息</a></td>
+        </tr>
+        
+      </table></td>
+  </tr>
+  <tr style="cursor: hand" onClick="MenuClick('Menu2')"> 
+    <td height="20" background="image/menu3.gif" bgcolor="#CCCCCC">工作安排</td>
+  </tr>
+  <tr id="Menu2" style="display: none"> 
+    <td valign="top"><table width="98" border="0" cellspacing="2" cellpadding="0">
+     
+        <tr> 
+          <td bgcolor="#D3E3F5"><a href="workplan/workPlan.jsp" target="mainFrame">日程安排</a></td>
+        </tr>
+     
+        <tr> 
+          <td bgcolor="#D3E3F5"><a href="workplan/canlender1.html" target="mainFrame">日历查询</a></td>
+        </tr>
+        
+      </table></td>
+  </tr>
+  <tr style="cursor: hand" onClick="MenuClick('Menu3')"> 
+    <td height="20" background="image/menu3.gif" bgcolor="#CCCCCC">名片夹</td>
+  </tr>
+  <tr id="Menu3" style="display: none"> 
+    <td valign="top"><table width="98" border="0" cellspacing="2" cellpadding="0">
+        <tr> 
+          <td bgcolor="#D3E3F5"><a href="Card_Category" target="mainFrame">名片夹分类</a></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#D3E3F5"><a href="Card_Box" target="mainFrame">个人名片夹</a></td>
+        </tr>
+        
+      </table></td>
+  </tr>
+<tr style="cursor: hand" onClick="MenuClick('Menu4')"> 
+    <td height="20" background="image/menu3.gif" bgcolor="#CCCCCC">待办事项</td>
+  </tr>
+  <tr id="Menu4" style="display: none"> 
+    <td valign="top"><table width="98" border="0" cellspacing="2" cellpadding="0">
+      <tr> 
+          <td bgcolor="#D3E3F5"><a href="SelectWorkplan?cur=1" target="mainFrame">待办事项</a></td>
+        </tr>
+      <tr> 
+          <td bgcolor="#D3E3F5"><a href="SelectWorkAll2?cur=1" target="mainFrame">工作清单</a></td>
+        </tr>
+      </table></td>
+  </tr>
+<tr style="cursor: hand" onClick="MenuClick('Menu5')"> 
+    <td height="20" background="image/menu3.gif" bgcolor="#CCCCCC">在线信息</td>
+  </tr>
+  <tr id="Menu5" style="display: none"> 
+    <td valign="top"><table width="98" border="0" cellspacing="2" cellpadding="0">
+	<tr> 
+          <td bgcolor="#D3E3F5"><a href="message/message_new.jsp"target="mainFrame">新建留言</a></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#D3E3F5"><a href="message/notread.htm"target="mainFrame">未读留言</a></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#D3E3F5"><a href="Message_Received"target="mainFrame">收件箱</a></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#D3E3F5"><a href="message/sendbox.htm" target="mainFrame">已发送</a></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#D3E3F5"><a href="message/draftbox.htm" target="mainFrame">草稿箱</a></td>
+        </tr>
+
+
+
+        
+      </table></td>
+  </tr>
+<tr style="cursor: hand" onClick="MenuClick('Menu6')"> 
+    <td height="20" background="image/menu3.gif" bgcolor="#CCCCCC">个人文件夹</td>
+  </tr>
+  <tr id="Menu6" style="display: none"> 
+    <td valign="top"><table width="98" border="0" cellspacing="2" cellpadding="0">
+       <tr> 
+          <td bgcolor="#D3E3F5"><a href="webfolder/mydocument.html" target="mainFrame">个人文件夹</a></td>
+        </tr>
+		 <tr> 
+          <td bgcolor="#D3E3F5"><a href="webfolder/sharedocument.html" target="mainFrame">共享文件夹</a></td>
+        </tr>
+      </table></td>
+  </tr>
+<tr style="cursor: hand" onClick="MenuClick('Menu7')"> 
+    <td height="20" background="image/menu3.gif" bgcolor="#CCCCCC">公司通讯录</td>
+  </tr>
+  <tr id="Menu7" style="display: none"> 
+    <td valign="top"><table width="98" border="0" cellspacing="2" cellpadding="0">
+       <tr> 
+          <td bgcolor="#D3E3F5"><a href="addresslist/company_AddressList.htm" target="mainFrame">公司通讯录</a></td>
+        </tr>
+      </table></td>
+  </tr>
+<tr style="cursor: hand" onClick="MenuClick('Menu8')"> 
+    <td height="20" background="image/menu3.gif" bgcolor="#CCCCCC">会议管理</td>
+  </tr>
+  <tr id="Menu8" style="display: none"> 
+    <td valign="top"><table width="98" border="0" cellspacing="2" cellpadding="0">
+        <tr> 
+          <td bgcolor="#D3E3F5"><a href="SelectMeets?cur=1"target="mainFrame">会议管理</a></td>
+        </tr>
+      
+        <tr> 
+          <td bgcolor="#D3E3F5"><a href="SelectRooms?cur=1" target="mainFrame">会议室维护</a></td>
+        </tr>
+		<tr> 
+          <td bgcolor="#D3E3F5"><a href="RoomBook?cur=1" target="mainFrame">预约会议室</a></td>
+        </tr> 
+        <tr> 
+          <td bgcolor="#D3E3F5"><a href="RoomCancles?cur=1" target="mainFrame">取消预约</a></td>
+        </tr>  
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>

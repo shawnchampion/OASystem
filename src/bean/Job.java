@@ -1,0 +1,33 @@
+package bean;
+
+public class Job {
+	  private int jobid;
+	  private String jobname;
+	public int getJobid() {
+		return jobid;
+	}
+	public void setJobid(int jobid) {
+		this.jobid = jobid;
+	}
+	public String getJobname() {
+		return jobname;
+	}
+	public void setJobname(String jobname) {
+		this.jobname = jobname;
+	}
+	public Job(int jobid, String jobname) {
+		super();
+		this.jobid = jobid;
+		this.jobname = jobname;
+	}
+	public Job() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String toString() {
+		return "Job [jobid=" + jobid + ", jobname=" + jobname + "]";
+	}
+	  
+	  
+}
